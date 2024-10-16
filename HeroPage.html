@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+#HeroPageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+}
+
+.HeroPage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="HeroPage">
+    <img src="https://t4.ftcdn.net/jpg/05/98/75/83/360_F_598758341_NzcqKk3DX3bJhQge0Ngba47JQDmI8bHm.jpg" style="width:100%;">
+        <div id="HeroPageText">CiiT Burgers
+            <br>
+            <button id="clickButton">Click Me</button>
+        </div>
+    </div>
+</body>
+<script>
+            $(document).ready(function() {
+            $('#clickButton').click(function() {
+                $('#clickMessage').text('Button was clicked!');
+            });
+</script>
