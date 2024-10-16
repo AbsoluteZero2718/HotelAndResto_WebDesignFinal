@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> Landing Page </title>
+
+<script src = "https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+
+<script>
+	$(document).ready(function()
+	{
+		$("a").hover(function()
+		{
+			$(this).css("background-color", "lightblue");
+		}, 
+		function()
+		{
+			$(this).css("background-color", "white");
+		});
+	});
+	</script>
+	</head>
+
+<body>
+	<style>
+		// insert css here
+	</style>
+
+<ul>
+	<li> <a href = "#home">Home</a></li>
+	<li> <a href = "#bookings">Bookings</a></li>
+	<li> <a href = "#">About</a></li>
+	<li> <a href = "#contacts">Contacts</a></li>
+</ul>
+</body>
+</html>
