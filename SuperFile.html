@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #HeroPageText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 300%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .HeroPage {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .HeroPage img {
+            width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        ul li a:hover {
+            background-color: lightblue;
+        }
+
+        .Footer {
+            background-color: gray;
+            padding: 4%;
+            text-align: left;
+            color: white;
+        }
+
+        .Footer h1 {
+            margin: 0;
+        }
+
+        .Footer input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .Footer button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .Footer button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="HotBar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bookings">Bookings</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+    </ul>
+</div>
+    <div class="HeroPage">
+        <img src="https://t4.ftcdn.net/jpg/05/98/75/83/360_F_598758341_NzcqKk3DX3bJhQge0Ngba47JQDmI8bHm.jpg" alt="CiiT Burgers">
+        <div id="HeroPageText">
+            CiiT Burgers
+            <br>
+            <button id="clickButton">Click Me</button>
+            <span id="clickMessage"></span>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <footer>
+            <h1>Join our newsletter for freebies!</h1>
+            <form id="EmailForm">
+                <input type="text" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#clickButton').click(function() {
+                $('#clickMessage').text('Welcome!');
+            });
+        });
+    </script>
+</body>
+</html>
