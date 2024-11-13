@@ -122,32 +122,39 @@
           </li>
           <li class="nav-item dropdown">
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        < <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Sign in
+        </button>
       </div>
     </div>
   </nav>
 
-  
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to CIIT Burgers!</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Our thicc, juicy meats straight to your mouth!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form id = 'add-post'>
+            <label>Username:</label>
+    <input type="text" name="Username" required> <br>
+    <label>Password:</label>
+    <input type="text" name="Password" required>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Log in</button>
       </div>
     </div>
   </div>
 </div>
+
+<script src = "script.js"> </script>
+        
+     
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -169,7 +176,7 @@
         <footer>
             <h1>Join our newsletter for freebies!</h1>
             <form id="EmailForm">
-                <input type="text" id="emailInput" placeholder="Enter your email" required>
+                <input type="text" id="emailInput" placeholder="Enter your email">
                 <button type="submit">Submit</button>
             </form>
         </footer>
